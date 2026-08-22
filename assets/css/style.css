@@ -2096,3 +2096,284 @@ section {
   border-color: #ffffff;
   color: #151515;
 }
+
+
+
+
+/* ---------------------- */
+/* =========================================
+   RAYSDESIGNER - FLOATING CONTACT BUTTONS
+   Right Side | Vertically Centered
+========================================= */
+
+.floating-contact {
+  position: fixed !important;
+
+  top: 78% !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  transform: translateY(-50%) !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+
+  gap: 8px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  z-index: 99999 !important;
+}
+
+
+/* =========================================
+   INDIVIDUAL BUTTON
+========================================= */
+
+.floating-btn {
+  position: relative !important;
+
+  width: 43px !important;
+  height: 43px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-radius: 12px 0 0 12px !important;
+
+  color: #ffffff !important;
+
+  font-size: 21px !important;
+  line-height: 1 !important;
+
+  text-decoration: none !important;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+
+  transition: all 0.3s ease !important;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.whatsapp-btn {
+  background: #25D366 !important;
+}
+
+.whatsapp-btn:hover {
+  background: #20bd5a !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+.call-btn {
+  background: linear-gradient(135deg,
+      #ff8a00,
+      #ff3d81) !important;
+}
+
+.call-btn:hover {
+  color: #ffffff !important;
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.email-btn {
+  background: linear-gradient(135deg,
+      #ff3d81,
+      #7b2cff) !important;
+}
+
+.email-btn:hover {
+  color: #ffffff !important;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.floating-btn:hover {
+  width: 62px !important;
+
+  transform: translateX(-3px) !important;
+
+  color: #ffffff !important;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================
+   LABEL / TOOLTIP
+========================================= */
+
+.floating-label {
+  position: absolute !important;
+
+  right: 70px !important;
+  top: 50% !important;
+
+  transform: translateY(-50%) !important;
+
+  padding: 7px 12px !important;
+
+  border-radius: 6px !important;
+
+  background: #222222 !important;
+  color: #ffffff !important;
+
+  font-family: 'Poppins', sans-serif !important;
+
+  font-size: 12px !important;
+  font-weight: 500 !important;
+
+  line-height: 1.4 !important;
+
+  white-space: nowrap !important;
+
+  opacity: 0 !important;
+  visibility: hidden !important;
+
+  pointer-events: none !important;
+
+  transition: all 0.25s ease !important;
+}
+
+
+/* Tooltip Arrow */
+
+.floating-label::after {
+  content: "" !important;
+
+  position: absolute !important;
+
+  right: -5px !important;
+  top: 50% !important;
+
+  transform: translateY(-50%) !important;
+
+  border-left: 5px solid #222222 !important;
+  border-top: 5px solid transparent !important;
+  border-bottom: 5px solid transparent !important;
+}
+
+
+/* Show label */
+
+.floating-btn:hover .floating-label {
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  right: 68px !important;
+}
+
+
+/* =========================================
+   WHATSAPP PULSE EFFECT
+========================================= */
+
+.whatsapp-btn::before {
+  content: "" !important;
+
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  border-radius: 12px 0 0 12px !important;
+
+  border: 2px solid #25D366 !important;
+
+  pointer-events: none !important;
+
+  animation: whatsappPulse 2s infinite !important;
+}
+
+
+@keyframes whatsappPulse {
+
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+  .floating-contact {
+    top: 81% !important;
+    right: 0 !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: translateY(-50%) !important;
+
+    gap: 6px !important;
+  }
+
+
+  .floating-btn {
+    width: 33px !important;
+    height: 33px !important;
+
+    font-size: 18px !important;
+
+    border-radius: 10px 0 0 10px !important;
+  }
+
+
+  .floating-btn:hover {
+    width: 50px !important;
+
+    transform: translateX(-2px) !important;
+  }
+
+
+  /* Hide text labels on mobile */
+
+  .floating-label {
+    display: none !important;
+  }
+
+
+  .whatsapp-btn::before {
+    border-radius: 10px 0 0 10px !important;
+  }
+
+}
