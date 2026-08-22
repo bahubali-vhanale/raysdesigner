@@ -140,6 +140,57 @@ p {
   opacity: 1;
 }
 
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  height: 25px;
+  font-size: 14px;
+  transition: all 0.5s;
+  z-index: 996;
+  background: rgba(64, 64, 66, 0.88);
+  backdrop-filter: blur(2px);
+}
+
+#topbar .topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: white;
+}
+
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: rgb(211, 208, 208);
+}
+
+#topbar .languages ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgb(211, 208, 208);
+}
+
+#topbar .languages ul a {
+  color: white;
+}
+
+#topbar .languages ul li+li {
+  padding-left: 10px;
+}
+
+#topbar .languages ul li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  content: "/";
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -148,7 +199,8 @@ p {
   backdrop-filter: blur(6px);
   transition: all 0.4s ease;
   z-index: 997;
-  height: 84px;
+  height: 65px;
+  top: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -168,6 +220,7 @@ p {
 
 #header .logo img {
   max-height: 38px;
+  /* max-height: 84px; */
 }
 
 /*--------------------------------------------------------------
@@ -490,6 +543,83 @@ p {
   position: relative;
 }
 
+#hero .play-btn {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(#102248 50%, rgba(179, 197, 239, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#hero .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(139, 123, 97, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#hero .play-btn:hover::after {
+  border-left: 15px solid #0d1423;
+  transform: scale(20);
+}
+
+#hero .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  #hero .play-btn {
+    margin-top: 30px;
+  }
+}
+
 /* subtle paper-grain texture over the hero — the one atmospheric flourish */
 #hero::after {
   content: "";
@@ -779,10 +909,11 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  justify-content: center;
+  background: url("../img/portfolio/consolidated\ all\ designs.png") center center no-repeat;
   background-size: cover;
   min-height: 420px;
-  filter: grayscale(15%);
+  filter: grayscale(10%);
   border: 1px solid var(--line);
 }
 
@@ -1449,6 +1580,21 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slide/slide-3.jpg") fixed center center;
+
+}
+
+.faq .p,
+.faq .section-title h2 {
+  color: var(--white);
+  /* border-color: var(--white); */
+}
+
+.faq .section-title h2::after {
+  background: var(--white);
+}
+
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -1648,6 +1794,8 @@ section {
   background: transparent;
   color: var(--ink);
 }
+
+
 
 @keyframes animate-loading {
   0% {
@@ -1897,7 +2045,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slide/slide-3.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slide/slide-1.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1905,6 +2053,7 @@ section {
 .cta h3 {
   color: #fff;
   font-family: var(--font-display);
+  font-style: italic;
   font-size: 28px;
   font-weight: 700;
 
@@ -1912,6 +2061,7 @@ section {
 
 .cta p {
   color: #fff;
+  font-style: italic;
 }
 
 .cta .cta-btn {
@@ -1919,6 +2069,7 @@ section {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 16px;
+  font-style: italic;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
