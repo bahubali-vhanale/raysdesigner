@@ -145,8 +145,8 @@ p {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  height: 25px;
-  font-size: 14px;
+  height: 20px;
+  font-size: 9px;
   transition: all 0.5s;
   z-index: 996;
   background: rgba(64, 64, 66, 0.88);
@@ -200,7 +200,7 @@ p {
   transition: all 0.4s ease;
   z-index: 997;
   height: 65px;
-  top: 25px;
+  top: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -219,7 +219,8 @@ p {
 }
 
 #header .logo img {
-  max-height: 38px;
+  max-height: 40px;
+  z-index: 997;
   /* max-height: 84px; */
 }
 
