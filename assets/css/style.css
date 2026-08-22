@@ -1907,6 +1907,32 @@ section {
   margin-bottom: 30px;
 }
 
+#footer .footer-top .footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+#footer .footer-top .footer-brand .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#footer .footer-top .footer-brand .logo img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 164px;
+  height: auto;
+}
+
+#footer .footer-top .footer-brand p {
+  max-width: 320px;
+}
+
 #footer .footer-top .footer-info h3 {
   font-family: var(--font-display);
   font-style: italic;
