@@ -35,14 +35,32 @@
 </head>
 
 <body>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+91 8421 711 011</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Rays Designer</a></h1>
+      <!-- <h1 class="logo"><a href="index.html">Rays Designer</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo"><img src="assets/img/portfolio/rayslogo.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -88,12 +106,24 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/consolidatedSlide.jpg) ;">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Design that speaks <br>before you do.</h2>
-                <div>
+                <!-- <h2 class="animate__animated animate__fadeInDown"><strong style="color: orange;">Design</strong> that
+                  speaks <br>before you do.
+                </h2> -->
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span class="text-white">Design</span> that
+                  <br>
+                  <span class="text-warning">SPEAKS</span> before you do.
+                </h2>
+                <!-- <div>
                   <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div> -->
+                <div
+                  class="d-flex align-items-center justify-content-center animate__animated animate__fadeInUp scrollto"
+                  data-aos="zoom-in" data-aos-delay="200">
+                  <a href="https://www.youtube.com/watch?v=WcIcVapfqXw" class="glightbox play-btn"></a>
                 </div>
               </div>
             </div>
@@ -103,14 +133,25 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Your brand deserves <br>a better first impression.
+                <!-- <h2 class="animate__animated animate__fadeInDown">Your brand deserves <br>a better first impression.
+                </h2> -->
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span class="text-white">Your brand deserves <br> a better first </span>
+
+                  <span class="text-warning"> IMPRESSION.</span>
                 </h2>
                 <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
                   ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
                   voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                <div>
+                <!-- <div>
                   <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div> -->
+                <div
+                  class="d-flex align-items-center justify-content-center  animate__animated animate__fadeInUp scrollto"
+                  data-aos="zoom-in" data-aos-delay="200">
+                  <a href="https://www.youtube.com/watch?v=WcIcVapfqXw" class="glightbox play-btn"></a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -119,13 +160,20 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Designed to be noticed.</h2>
+                <h2 class="animate__animated animate__fadeInDown">Designed to be <span class="text-warning">
+                    NOTICED.</span></h2>
                 <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
                   ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
                   voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                <div>
+                <!-- <div>
                   <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div> -->
+                <div
+                  class="d-flex align-items-center justify-content-center  animate__animated animate__fadeInUp scrollto"
+                  data-aos="zoom-in" data-aos-delay="200">
+                  <a href="https://www.youtube.com/watch?v=WcIcVapfqXw" class="glightbox play-btn"></a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -154,8 +202,10 @@
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
-              <h3>Rays | Where Ideas Take Shape </h3>
-              <p>
+              <h3>RAYSDESIGNER </h3>
+              <!-- <p style="font-weight: 300; font-style: italic; color: #474242;">Where Ideas Take Shape</p> -->
+
+              <p><strong style="font-style: italic; color: #676060;">Where Ideas Take Shape</strong><br><br>
                 Founded in 2019, RaysDesigner is a creative branding and graphic design studio dedicated to turning
                 ideas into powerful visual experiences.
 
@@ -369,6 +419,18 @@
       </div>
     </section><!-- End Services Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> "Your brand deserves better than average. Elevate your look now."</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container">
@@ -416,19 +478,6 @@
       </div>
     </section><!-- End Why Us Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> "Your brand deserves better than average. Elevate your look now."</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -445,11 +494,11 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-Logo">Logo</li>
               <li data-filter=".filter-card">Cards</li>
-              <li data-filter=".filter-web">Branding & Company Profiles</li>
-              <li data-filter=".filter-web">Brouchers</li>
-              <li data-filter=".filter-web">Product Packaging</li>
-              <li data-filter=".filter-web">Social Media Posts</li>
-              <li data-filter=".filter-web">Exhibition Stalls</li>
+              <li data-filter=".filter-Logo">Branding & Company Profiles</li>
+              <li data-filter=".filter-card">Brouchers</li>
+              <li data-filter=".filter-Logo">Product Packaging</li>
+              <li data-filter=".filter-card">Social Media Posts</li>
+              <li data-filter=".filter-Logo">Exhibition Stalls</li>
             </ul>
           </div>
         </div>
@@ -465,7 +514,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -480,7 +529,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -495,7 +544,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 4"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -510,7 +559,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 5"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -525,7 +574,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 7"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -540,7 +589,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 7"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -555,7 +604,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/logo3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Logo 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -570,7 +619,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/card1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -580,14 +629,14 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/logo1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/logo1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Card 2"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -595,14 +644,14 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/logo3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 2</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/logo3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Web 2"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -612,14 +661,14 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/logo4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 1</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/logo4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Card 1"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -627,33 +676,33 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/logo5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 3</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/logo5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Card 3"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/logo6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/logo6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
 
 
@@ -685,12 +734,12 @@
                   <h4>Kiran Jadhav</h4>
                   <span>Founder and Owner <br> RaysDesigner</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href="#team"><i class="bi bi-twitter"></i></a>
                     <a href="https://www.behance.net/raysdesigner?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafJ14D6-H8jFPSDbeMPEIFjvPaLtXaWYRMqyev--qSi_7TVYuZvnNK1BpdDaQ_aem_BQbUB2i4M-eZ-XGdjqPBLw"
                       target="_blank"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/raysdesigner_official/" target="_blank"><i
                         class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="#team"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -705,10 +754,10 @@
                   <h4>Akash Jadhav</h4>
                   <span>Manager & CTO</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="#team"><i class="bi bi-twitter"></i></a>
+                    <a href="#team"><i class="bi bi-facebook"></i></a>
+                    <a href="#team"><i class="bi bi-instagram"></i></a>
+                    <a href="#team"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -723,10 +772,10 @@
                   <h4>Mona </h4>
                   <span>Designer</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="#team"><i class="bi bi-twitter"></i></a>
+                    <a href="#team"><i class="bi bi-facebook"></i></a>
+                    <a href="#team"><i class="bi bi-instagram"></i></a>
+                    <a href="#team"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -741,10 +790,10 @@
                   <h4>Suraj Banage</h4>
                   <span>Designer</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="#team"><i class="bi bi-twitter"></i></a>
+                    <a href="#team"><i class="bi bi-facebook"></i></a>
+                    <a href="#team"><i class="bi bi-instagram"></i></a>
+                    <a href="#team"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -828,80 +877,147 @@
     <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
+
     <section id="faq" class="faq section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p style="color: white;">
+            Have questions about our design and branding services? Here are
+            common questions to help you understand how we can bring your brand
+            vision to life.
+          </p>
         </div>
 
         <div class="faq-list">
           <ul>
+
+            <!-- FAQ 1 -->
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i>
+
+              <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                What graphic design services do you offer?
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  We provide a complete range of creative design solutions,
+                  including logo design, branding, packaging design, social media
+                  post design, marketing creatives, promotional materials, stall
+                  and exhibition design, brochures, business cards, banners and
+                  other customized graphic design requirements.
                 </p>
+
               </div>
             </li>
 
+
+            <!-- FAQ 2 -->
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
-                class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i>
+
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+
+                Can you create a complete brand identity for my business?
+
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
-                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Yes. We can create a complete and consistent brand identity
+                  starting from logo design and color palette to typography,
+                  brand guidelines, stationery, packaging and marketing
+                  creatives. Our goal is to create a professional visual identity
+                  that makes your brand recognizable and memorable.
                 </p>
+
               </div>
             </li>
 
+
+            <!-- FAQ 3 -->
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                class="collapsed">Dolor sit amet consectetur adipiscing elit? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i>
+
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+
+                Do you design packaging for products?
+
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
-                  integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
-                  Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
-                  quis
+                  Absolutely. We design creative and market-ready packaging that
+                  combines visual appeal with brand consistency. From boxes,
+                  labels and pouches to bottles, jars and other product
+                  packaging, we focus on designs that communicate your brand
+                  effectively and stand out on the shelf.
                 </p>
+
               </div>
             </li>
 
+
+            <!-- FAQ 4 -->
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
-                class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i
-                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i>
+
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">
+
+                Do you design social media posts and marketing creatives?
+
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
-                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
-                  gravida quis blandit turpis cursus in.
+                  Yes. We create engaging social media posts, promotional
+                  creatives, campaign graphics, festival posts, product
+                  promotions, advertisements and other digital marketing
+                  creatives. Designs are created to maintain a consistent brand
+                  presence while attracting attention across social media
+                  platforms.
                 </p>
+
               </div>
             </li>
 
+
+            <!-- FAQ 5 -->
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
-                class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
-                dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i>
+
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">
+
+                Do you design exhibition stalls and promotional displays?
+
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
-                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
-                  tellus in metus vulputate eu scelerisque.
+                  Yes. We create visually impactful stall and exhibition designs
+                  that help businesses attract visitors and present their brand
+                  professionally. We can design concepts for exhibition stalls,
+                  backdrops, banners, counters, promotional displays and other
+                  event branding requirements.
                 </p>
+
               </div>
             </li>
 
@@ -910,6 +1026,8 @@
 
       </div>
     </section>
+
+
     <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -918,9 +1036,8 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>You bring the idea. We’ll bring the creativity.
+            Together, let’s design something worth remembering.</p>
         </div>
 
         <div class="row contact-info">
@@ -952,31 +1069,39 @@
         </div>
 
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email">
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+
         </div>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars">
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email">
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div data-aos="fade-up" style=" margin-top:12px;border:1px solid black;">
+            <iframe style=" width: 100%; height: 200px;"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.1460019639962!2d74.44483233598099!3d16.719565384124508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc11d9f114eaa2d%3A0x1092adf256fb1446!2sraysdesigner!5e0!3m2!1sen!2sin!4v1787406482305!5m2!1sen!2sin"
+              width="600" height="450" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen>raysDesigner</iframe>
+          </div>
+        </form>
+
 
       </div>
     </section>
@@ -1000,13 +1125,13 @@
                 <strong>Email:</strong> design.rays8@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#footer" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.behance.net/raysdesigner?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafJ14D6-H8jFPSDbeMPEIFjvPaLtXaWYRMqyev--qSi_7TVYuZvnNK1BpdDaQ_aem_BQbUB2i4M-eZ-XGdjqPBLw"
                   target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/raysdesigner_official/" target="_blank" class="instagram"><i
                     class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#footer" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#footer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1014,11 +1139,11 @@
           <div class="col-lg-5 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Logo Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Packaging Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Social Media Post</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Social Media Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Corporate Brandings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Logo Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Packaging Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Social Media Post</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Social Media Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Corporate Brandings</a></li>
 
             </ul>
           </div>
