@@ -949,7 +949,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
   padding: 0 0 40px 0;
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slide/slide-2.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../webp/slide-2.webp") fixed center center;
 
 }
 
