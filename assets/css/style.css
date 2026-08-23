@@ -1016,7 +1016,7 @@ section {
   display: inline-block;
   padding: 15px 0;
   /* filter: grayscale(100%); */
-  opacity: 0.55;
+  opacity: 0.8;
 }
 
 .clients img:hover {
@@ -1026,6 +1026,19 @@ section {
 }
 
 @media (max-width: 768px) {
+  .clients .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .clients .row>div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .clients img {
     max-width: 40%;
   }
