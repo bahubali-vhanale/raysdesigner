@@ -34,6 +34,55 @@
     }
   }
 
+  const EMAILJS_PUBLIC_KEY = 'Ila94rWYraJ6luSbF'
+  const EMAILJS_SERVICE_ID = 'service_8fp4k9u'
+  const EMAILJS_TEMPLATE_ID = 'template_zor0t39'
+
+  const sendMail = (event) => {
+    event.preventDefault()
+
+    const form = event.currentTarget
+    const loading = form.querySelector('.loading')
+    const errorMessage = form.querySelector('.error-message')
+    const sentMessage = form.querySelector('.sent-message')
+    const submitButton = form.querySelector('button[type="submit"]')
+    const templateParams = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      subject: form.elements.subject.value,
+      message: form.elements.message.value
+    }
+
+    loading.classList.add('d-block')
+    errorMessage.classList.remove('d-block')
+    sentMessage.classList.remove('d-block')
+    submitButton.disabled = true
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+      .then(() => {
+        loading.classList.remove('d-block')
+        sentMessage.classList.add('d-block')
+        form.reset()
+      })
+      .catch((error) => {
+        loading.classList.remove('d-block')
+        errorMessage.textContent = 'Unable to send your message. Please try again.'
+        errorMessage.classList.add('d-block')
+        console.error('EmailJS error:', error)
+      })
+      .finally(() => {
+        submitButton.disabled = false
+        setTimeout(() => {
+          sentMessage.classList.remove('d-block')
+        }, 5000)
+      })
+  }
+
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY })
+    on('submit', '.php-email-form', sendMail)
+  }
+
   /**
    * Easy on scroll event listener 
    */
